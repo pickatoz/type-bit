@@ -1,4 +1,6 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { TooltipProvider } from "@/components/ui/tooltip";
+import SplashScreen from "./pages/SplashScreen";
 
 function App() {
   // const [greetMsg, setGreetMsg] = useState("");
@@ -10,11 +12,13 @@ function App() {
   // }
 
   return (
-    <TooltipProvider>
-      <main className="min-h-screen flex flex-col items-center justify-center p-24">
-        <h1 className="text-2xl text-red-500 font-bold">Hello World</h1>
-      </main>
-    </TooltipProvider>
+    <BrowserRouter>
+      <TooltipProvider>
+        <Routes>
+          <Route path="/" element={<SplashScreen />} />
+        </Routes>
+      </TooltipProvider>
+    </BrowserRouter>
   );
 }
 
