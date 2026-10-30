@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import Index from "./pages/Index";
-
+import { DevToolsGuard } from "./context/DevToolsGuard";
 
 function App() {
   // const [greetMsg, setGreetMsg] = useState("");
@@ -13,13 +13,15 @@ function App() {
   // }
 
   return (
-    <BrowserRouter>
-      <TooltipProvider>
-        <Routes>
-          <Route path="/" element={<Index />} />
-        </Routes>
-      </TooltipProvider>
-    </BrowserRouter>
+    <DevToolsGuard>
+      <BrowserRouter>
+        <TooltipProvider>
+          <Routes>
+            <Route path="/" element={<Index />} />
+          </Routes>
+        </TooltipProvider>
+      </BrowserRouter>
+    </DevToolsGuard>
   );
 }
 
