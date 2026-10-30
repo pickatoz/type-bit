@@ -1,4 +1,4 @@
-
+import { TooltipProvider } from "@/components/ui/tooltip";
 
 function App() {
   // const [greetMsg, setGreetMsg] = useState("");
@@ -10,9 +10,11 @@ function App() {
   // }
 
   return (
-    <main className="min-h-screen flex flex-col items-center justify-center p-24">
-      <h1 className="text-2xl text-red-500 font-bold">Hello World</h1>
-    </main>
+    <TooltipProvider>
+      <main className="min-h-screen flex flex-col items-center justify-center p-24">
+        <h1 className="text-2xl text-red-500 font-bold">Hello World</h1>
+      </main>
+    </TooltipProvider>
   );
 }
 
