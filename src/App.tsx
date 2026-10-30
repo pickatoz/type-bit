@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { TooltipProvider } from "@/components/ui/tooltip";
-import SplashScreen from "./pages/SplashScreen";
+import Index from "./pages/Index";
+
 
 function App() {
   // const [greetMsg, setGreetMsg] = useState("");
@@ -15,7 +16,7 @@ function App() {
     <BrowserRouter>
       <TooltipProvider>
         <Routes>
-          <Route path="/" element={<SplashScreen />} />
+          <Route path="/" element={<Index />} />
         </Routes>
       </TooltipProvider>
     </BrowserRouter>
