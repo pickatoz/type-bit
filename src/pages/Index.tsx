@@ -6,14 +6,10 @@ function Index() {
   const [showSplash, setShowSplash] = useState(true);
 
   if (showSplash) {
-    return (
-      <SplashScreen onComplete={() => setShowSplash(false)} />
-    )
+    return <SplashScreen onComplete={() => setShowSplash(false)} />;
   }
 
-  return (
-    <MainMenu />
-  )
+  return <MainMenu />;
 }
 
-export default Index
+export default Index;

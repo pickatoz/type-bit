@@ -1,5 +1,5 @@
-import { useEffect, useState } from "react";
-import typeBitLogo from "@/assets/type-bit.jpg";
+import { useEffect, useState } from 'react';
+import typeBitLogo from '@/assets/type-bit.jpg';
 
 function SplashScreen({ onComplete }: { onComplete?: () => void }) {
   const [progress, setProgress] = useState(0);
@@ -141,7 +141,7 @@ function SplashScreen({ onComplete }: { onComplete?: () => void }) {
 
       {/* Footer */}
       <p className="relative z-10 mt-8 text-sm text-gray-500">
-        Developed By{" "}
+        Developed By{' '}
         <a
           href="https://pickatoz.com"
           target="_blank"

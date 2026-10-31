@@ -1,7 +1,7 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { TooltipProvider } from "@/components/ui/tooltip";
-import Index from "./pages/Index";
-import { DevToolsGuard } from "./context/DevToolsGuard";
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { TooltipProvider } from '@/components/ui/tooltip';
+import Index from './pages/Index';
+import { DevToolsGuard } from './context/DevToolsGuard';
 
 function App() {
   // const [greetMsg, setGreetMsg] = useState("");
