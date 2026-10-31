@@ -1,0 +1,9 @@
+node_modules
+.dist
+build
+dist
+coverage
+src-tauri/target
+src-tauri/gen
+.husky/_
+pnpm-lock.yaml
